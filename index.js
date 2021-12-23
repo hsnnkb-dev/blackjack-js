@@ -8,7 +8,15 @@ let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.getElementById("cards-el");
-//console.log(message);
+
+let player = {
+    name: "Nico",
+    chips: 145,
+}
+
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = player.name + ": $" + player.chips;
+
 
 function startGame() {
     let firstCard = getRandomCard();
